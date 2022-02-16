@@ -10,9 +10,6 @@ function isLeapYear(year) {
   return (year % 4 == 0) && (year % 100 != 0) || (year % 400 == 0);
 }
 
-function isLeapYear(year) {
-  return new Date(year, 2, 0).getDate() === 29;
-}
 let message = "2020年"
 console.log(message)
 console.log(isLeapYear(2020));
